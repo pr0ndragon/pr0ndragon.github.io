@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $.getJSON("https://www.googleapis.com/drive/v3/files?access_token=ya29.a0AfH6SMALG0CTlV-eNurg2F3lyaH0DwVsFtcG7UxlYz_KKyeds4hdYkjjZ_Hi1PhR1Pod9-VqqFUHhQLewfYfnGgIMUy7R1DV6CnntmwX-_rENicuTfTX5MF3oS09fvBJnpLKp7cBqgsRj4u3ibGIwXkpL4FmQa3opITFk_ZMxuU", function(json) {
+    $.getJSON("https://www.googleapis.com/drive/v3/files?key=AIzaSyA_q_mKzUdiZNe5vevrvijJ6vYWCSQf3jI", function(json) {
         $.each(json.files, function(i, item) {
             if (json.files[i].mimeType != "application/vnd.google-apps.folder") {
                 if (json.files[i].mimeType == "image/jpeg") {
@@ -10,5 +10,5 @@ $(document).ready(function() {
                 };
             };
         });
-    }); //uc?export=view file:///C:/Users/tarik/Desktop/workspace/gallery/gallery.html
+    });
 });
